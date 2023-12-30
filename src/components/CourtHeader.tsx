@@ -9,7 +9,7 @@ export default function CourtHeader(props: CourtHeaderProps) {
   const totalCourts = 8;
   const courts = Array(totalCourts + 1).fill(0);
   return (
-    <div className="flex pr-[15px]">
+    <div className="flex">
       {courts.map((e, index) => {
         if (index === 0) {
           return (
@@ -19,7 +19,7 @@ export default function CourtHeader(props: CourtHeaderProps) {
           );
         } else {
           return (
-            <div className="flex w-full min-h-[50px] flex-col flex-1 border-2 justify-center text-center">
+            <div className="flex w-full min-h-[50px] flex-col flex-1 border-2 justify-center text-center text-black">
               Court {index}
             </div>
           );

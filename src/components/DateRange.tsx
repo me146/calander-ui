@@ -39,7 +39,7 @@ export default function DateRange(props: CourtHeaderProps) {
 
   return (
     <div className="flex py-[30px] px-[80px] bg-[#889ab633] items-center gap-2">
-      <div className="min-w-[130px]">{selectedDate.format("MMMM, YYYY")}</div>
+      <div className="min-w-[130px] text-black">{selectedDate.format("MMMM, YYYY")}</div>
       <div
         className="flex flex-col px-[10px] justify-center text-center cursor-pointer"
         onClick={() => {
@@ -53,15 +53,15 @@ export default function DateRange(props: CourtHeaderProps) {
           moment.format("MMMM Do YYYY") === selectedDate.format("MMMM Do YYYY");
         return (
           <div
-            className={`flex flex-col min-w-[60px] px-[10px] justify-center text-center cursor-pointer rounded-md ${
+            className={`flex flex-col min-w-[60px] px-[10px] justify-center text-center cursor-pointer text-black rounded-md ${
               isSelected ? "bg-white" : null
             }`}
             onClick={() => {
               onDateClick(moment);
             }}
           >
-            <div>{moment.format("ddd")}</div>
-            <div>{moment.format("DD")}</div>
+            <div className="text-black">{moment.format("ddd")}</div>
+            <div className="text-black">{moment.format("DD")}</div>
           </div>
         );
       })}

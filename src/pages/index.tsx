@@ -33,11 +33,11 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="flex h-full w-full flex-1">
+    <main className="flex h-full w-full flex-1 text-black">
       <div className="flex h-full w-full flex-1 flex-col">
         <DateRange></DateRange>
         <CourtHeader></CourtHeader>
-        <div className="flex w-full flex-1 overflow-auto flex-col relative">
+        <div className="flex w-full flex-1 overflow-auto flex-col relative pt-[2px] bg-[#889ab633]">
           {!!currTime && (
             <div
               className={`absolute flex w-full items-center text-red-400 pl-[40px] overflow-hidden z-1000`}

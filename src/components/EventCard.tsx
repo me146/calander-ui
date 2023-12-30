@@ -5,7 +5,7 @@ const EventCard = () => {
     <div className=' w-full flex flex-col justify-start items-start mx-[10px] mt-2 mb-2 border border-none bg-[#7E93FF] bg-opacity-[10%] rounded-l-[3px] rounded-r-[7px]'>
         <div className='w-full px-[7px] pb-[5px] pt-[3px] border-l-[2.5px] border-l-[#F00] rounded-tl-[3px]'>
             <div className='flex justify-start items-start shrink-0 '>
-                <span className='text-xs font-normal uppercase leading-4'>8:00 - 9:00</span>
+                <span className='text-xs font-normal uppercase leading-4 text-black'>0:00 - 1:00</span>
             </div>
         </div>
         <div className=' w-full px-[7px] pb-[5px] pt-[2px]  border-l-[2.5px] border-l-[#EAF956] rounded-bl-[3px]'>

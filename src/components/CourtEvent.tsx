@@ -17,7 +17,7 @@ export default function HourEventByCourt(props: CourtEventProps) {
           return (
             <div
               id={`hour-${props.hour}`}
-              className="flex min-h-[50px] min-w-[80px] flex-col bg-[#889ab633] justify-end text-center"
+              className="flex min-h-[50px] min-w-[80px] flex-col bg-[#889ab633] justify-end text-center text-black"
             >
               {props.hour} : 00
             </div>
@@ -26,11 +26,11 @@ export default function HourEventByCourt(props: CourtEventProps) {
           return (
             <div className="flex w-full min-h-[50px] flex-col border-r-2 border-l-2 justify-center text-center">
               {props.eventShow && index == 1 ? (
-                <div className="flex flex-1 h-full w-full border-b-2"><EventCard /></div>
+                <div className="flex flex-1 bg-white h-full w-full border-b-2"><EventCard /></div>
               ) : (
                 <>
-                  <div className="flex flex-1 h-full w-full border-b-2 border-[#f6f4f4]"></div>
-                  <div className="flex flex-1 h-full w-full border-b-2"></div>
+                  <div className="flex flex-1 bg-white h-full w-full border-b-2 border-[#f6f4f4]"></div>
+                  <div className="flex flex-1 bg-white h-full w-full border-b-2"></div>
                 </>
               )}
             </div>
